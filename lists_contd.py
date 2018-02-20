@@ -14,7 +14,7 @@ for player in players[:3]:
 
 ###Copying a list, the use of [:] means everything
 my_foods = ['pizza', 'falafel', 'carrot cake']
-friend_foods = my_foods[:] # this is copying the entire list
+friend_foods = my_foods[:]  # this is copying the entire list
 print("My favorite foods are:")
 print(my_foods)
 print("\nMy friend's favorite foods are:")

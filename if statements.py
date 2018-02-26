@@ -81,6 +81,30 @@ if 'extra cheese' in requested_toppings:
 print("\nFinished making your pizza!")
 
 #######
+#Check that a list has an entry, and not blank.
+# Python checks via below, if empty it returns False
+
+requested_toppings =[]
+if requested_toppings:
+    print("it would enter here is True")
+else:
+    print("It went False as there is nothing in the list")
+##
+
+#Multiple lists
+available_toppings = ('mushrooms', 'olives', 'green peppers', 'pepperoni', 'pineapple', 'extra cheese') #use a tuple
+requested_toppings = ['mushrooms', 'french fries', 'extra cheese']
+print requested_toppings
+
+for requested_topping in requested_toppings:
+    if requested_topping in available_toppings:
+        print('adding ' + requested_topping)
+    else:
+        print ('sorry ' + requested_topping + ' is not available')
+
+print('Finished making your pizza')
+
+
 
 
 

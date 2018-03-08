@@ -40,3 +40,15 @@ while active:
         active = False
     else:
         print(message)
+
+#####Using BREAK to exit a loop
+prompt = "\nTell me something"
+prompt += "\nEnter 'quit' to end"
+
+while True:
+    city = raw_input(prompt)
+    if city == 'quit':
+        break
+    else:
+        print("id love to go to " + city.title())
+

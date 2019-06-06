@@ -11,7 +11,7 @@ import time
 #setting parameters like host IP, username, passwd and number of iterations to gather cmds
 #HOST = "18.85.7.24"
 USER = "admin"
-PASS = "plexxi"
+PASS = *****************add the default password in here
 
 #list of ip address
 

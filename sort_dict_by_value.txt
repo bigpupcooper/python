@@ -1,0 +1,46 @@
+In [1]:
+
+In [1]: from collections import OrderedDict
+
+In [2]: d = {"third": 3, "first": 1, "second", 2,"fourth", 4}
+  File "<ipython-input-2-b8173dd5d2b0>", line 1
+    d = {"third": 3, "first": 1, "second", 2,"fourth", 4}
+                                         ^
+SyntaxError: invalid syntax
+
+
+In [3]: d = {"third": 3, "first": 1, "second": 2,"fourth", 4}
+  File "<ipython-input-3-851ccf626d68>", line 1
+    d = {"third": 3, "first": 1, "second": 2,"fourth", 4}
+                                                     ^
+SyntaxError: invalid syntax
+
+
+In [4]: d = {"third": 3, "first": 1, "second": 2,"fourth": 4}
+
+In [5]: d
+Out[5]: {'first': 1, 'fourth': 4, 'second': 2, 'third': 3}
+
+In [6]: d
+Out[6]: {'first': 1, 'fourth': 4, 'second': 2, 'third': 3}
+
+In [7]: d
+Out[7]: {'first': 1, 'fourth': 4, 'second': 2, 'third': 3}
+
+In [8]: for k, v in d.items():
+   ...:     print "%s: %s" %(k, v)
+   ...:
+second: 2
+fourth: 4
+third: 3
+first: 1
+
+In [9]: d
+Out[9]: {'first': 1, 'fourth': 4, 'second': 2, 'third': 3}
+
+In [10]: d_sorted_by_value = OrderedDict(sorted(d.items(), key=lambda x: x[1]))
+
+In [11]: d_sorted_by_value
+Out[11]: OrderedDict([('first', 1), ('second', 2), ('third', 3), ('fourth', 4)])
+
+In [12]: exit
